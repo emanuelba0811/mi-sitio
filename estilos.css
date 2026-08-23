@@ -1,220 +1,572 @@
-/* CONFIGURACIÓN GENERAL */
+<!DOCTYPE html>
+<html lang="es">
 
-* {
-    box-sizing: border-box;
-}
+<head>
 
-body {
-    margin: 0;
-    background-color: #f5f5f5;
-    color: #333333;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+    <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* ENCABEZADO */
+    <title>Modelo TCP/IP y comparación con OSI</title>
 
-header {
-    background-color: #0077cc;
-    color: white;
-    padding: 30px 10%;
-}
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.encabezado {
-    max-width: 1100px;
-    margin: auto;
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
 
-header h1 {
-    margin: 0;
-    font-size: 35px;
-}
+</head>
 
-header p {
-    margin-top: 8px;
-    font-size: 18px;
-}
 
-.icono {
-    font-size: 70px;
-}
+<body>
 
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
 
-/* SECCIONES */
+    <header>
 
-section {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 35px;
+        <div class="encabezado">
 
-    background-color: white;
+            <div>
 
-    border-radius: 12px;
+                <h1>
+                    Modelo TCP/IP y comparación con OSI
+                </h1>
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-}
+                <p>
+                    Estudiante: Emanuel Barrios Villarreal
+                </p>
 
-section h2 {
-    color: #0077cc;
-    font-size: 28px;
+            </div>
 
-    border-bottom: 3px solid #0077cc;
+            <div class="icono">
+                🌐
+            </div>
 
-    padding-bottom: 8px;
-}
+        </div>
 
-section h3 {
-    color: #005b99;
-}
+    </header>
 
-section p {
-    font-size: 17px;
-}
 
+    <!-- =========================
+         PRESENTACIÓN
+    ========================== -->
 
-/* PRESENTACIÓN */
+    <section class="presentacion">
 
-.presentacion {
-    text-align: center;
-}
+        <h2>
+            Modelos de comunicación en redes
+        </h2>
 
-.presentacion h2 {
-    border-bottom: none;
-}
+        <p>
+            Los modelos TCP/IP y OSI permiten comprender cómo se
+            comunican los dispositivos dentro de una red informática.
+            Estos modelos organizan los diferentes procesos que hacen
+            posible el intercambio de información entre computadores,
+            servidores y otros dispositivos.
+        </p>
 
+        <img src="img/objeto.png"
+             alt="Objeto representativo de los modelos TCP/IP y OSI">
 
-/* IMÁGENES */
+        <p class="pie-imagen">
+            Representación visual de los modelos TCP/IP y OSI mediante
+            elementos relacionados con las redes informáticas.
+        </p>
 
-img {
-    width: 100%;
-    max-width: 900px;
+    </section>
 
-    display: block;
 
-    margin: 25px auto;
+    <!-- =========================
+         INTRODUCCIÓN
+    ========================== -->
 
-    border-radius: 10px;
-}
+    <section>
 
-.pie-imagen {
-    text-align: center;
-    font-size: 14px;
-    color: #666666;
-}
+        <h2>
+            Introducción
+        </h2>
 
+        <p>
+            Las redes informáticas permiten que diferentes dispositivos
+            puedan comunicarse y compartir información. Para comprender
+            cómo ocurre esta comunicación existen modelos que organizan
+            los diferentes procesos necesarios para enviar y recibir datos.
+        </p>
 
-/* LISTAS */
+        <p>
+            Dos de los modelos más importantes son el modelo OSI y el
+            modelo TCP/IP. El modelo OSI divide la comunicación en siete
+            capas, mientras que TCP/IP utiliza una estructura de cuatro
+            capas que está relacionada con los protocolos utilizados
+            en Internet.
+        </p>
+
+        <p>
+            Conocer estos modelos es importante para comprender el
+            funcionamiento de las redes, analizar los protocolos y
+            facilitar la identificación de problemas de comunicación.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         MODELO TCP/IP
+    ========================== -->
+
+    <section>
+
+        <h2>
+            Modelo TCP/IP
+        </h2>
+
+        <p>
+            El modelo TCP/IP es un conjunto de protocolos que permite
+            la comunicación entre dispositivos conectados a una red.
+            Es fundamental para el funcionamiento de Internet y organiza
+            las funciones de comunicación en diferentes capas.
+        </p>
+
+        <h3>
+            Capas del modelo TCP/IP
+        </h3>
+
+        <ul>
+
+            <li>
+                <strong>Acceso a la red:</strong>
+                permite la comunicación entre los dispositivos y el
+                medio físico de transmisión.
+            </li>
+
+            <li>
+                <strong>Internet:</strong>
+                se encarga del direccionamiento y del envío de paquetes
+                entre diferentes redes.
+            </li>
 
-li {
-    margin-bottom: 10px;
-}
+            <li>
+                <strong>Transporte:</strong>
+                permite la comunicación entre aplicaciones utilizando
+                protocolos como TCP y UDP.
+            </li>
+
+            <li>
+                <strong>Aplicación:</strong>
+                proporciona servicios de red utilizados por las
+                aplicaciones, como HTTP, DNS, FTP y SMTP.
+            </li>
+
+        </ul>
+
+        <img src="img/tcpip.png"
+             alt="Capas del modelo TCP/IP">
 
+        <p class="pie-imagen">
+            Representación de las cuatro capas principales del modelo TCP/IP.
+        </p>
 
-/* TABLA */
+    </section>
 
-table {
-    width: 100%;
-    border-collapse: collapse;
 
-    margin-top: 25px;
-}
+    <!-- =========================
+         MODELO OSI
+    ========================== -->
 
-th,
-td {
-    border: 1px solid #dddddd;
+    <section>
 
-    padding: 14px;
+        <h2>
+            Modelo OSI
+        </h2>
 
-    text-align: left;
-}
+        <p>
+            El modelo OSI es un modelo de referencia que divide la
+            comunicación de una red en siete capas. Su objetivo es
+            organizar y explicar las diferentes funciones que participan
+            en la transmisión de información entre dispositivos.
+        </p>
 
-th {
-    background-color: #0077cc;
-    color: white;
-}
+        <ol>
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
+            <li>
+                <strong>Física:</strong>
+                transmisión de bits mediante el medio físico.
+            </li>
 
+            <li>
+                <strong>Enlace de datos:</strong>
+                comunicación entre dispositivos conectados directamente.
+            </li>
 
-/* TARJETAS */
+            <li>
+                <strong>Red:</strong>
+                direccionamiento y selección de rutas.
+            </li>
 
-.columnas {
-    display: flex;
-    gap: 25px;
-}
+            <li>
+                <strong>Transporte:</strong>
+                comunicación de extremo a extremo.
+            </li>
 
-.tarjeta {
-    flex: 1;
+            <li>
+                <strong>Sesión:</strong>
+                administración de las sesiones de comunicación.
+            </li>
 
-    padding: 25px;
+            <li>
+                <strong>Presentación:</strong>
+                representación y transformación de los datos.
+            </li>
 
-    background-color: #f5f9fc;
+            <li>
+                <strong>Aplicación:</strong>
+                servicios de red utilizados por las aplicaciones.
+            </li>
 
-    border-left: 5px solid #0077cc;
+        </ol>
 
-    border-radius: 8px;
-}
+        <img src="img/comparacion.png"
+             alt="Comparación de los modelos TCP/IP y OSI">
 
-.tarjeta h3 {
-    font-size: 24px;
-}
+        <p class="pie-imagen">
+            Relación entre las capas del modelo TCP/IP y las siete capas
+            del modelo OSI.
+        </p>
 
+    </section>
 
-/* FOOTER */
 
-footer {
-    margin-top: 50px;
+    <!-- =========================
+         COMPARACIÓN
+    ========================== -->
 
-    padding: 30px;
+    <section>
 
-    background-color: #333333;
+        <h2>
+            Comparación entre TCP/IP y OSI
+        </h2>
 
-    color: white;
+        <p>
+            Aunque ambos modelos permiten comprender la comunicación
+            en redes, presentan diferencias en la cantidad de capas,
+            estructura y utilización. TCP/IP está orientado a los
+            protocolos utilizados en redes actuales, mientras que OSI
+            funciona principalmente como un modelo de referencia para
+            comprender las funciones de una red.
+        </p>
 
-    text-align: center;
-}
+        <table>
 
+            <thead>
 
-/* RESPONSIVE */
+                <tr>
 
-@media (max-width: 700px) {
+                    <th>Característica</th>
 
-    .encabezado {
-        flex-direction: column;
-        text-align: center;
-    }
+                    <th>TCP/IP</th>
 
-    header h1 {
-        font-size: 28px;
-    }
+                    <th>OSI</th>
 
-    .icono {
-        font-size: 50px;
-        margin-top: 15px;
-    }
+                </tr>
 
-    section {
-        margin: 20px 10px;
-        padding: 20px;
-    }
+            </thead>
 
-    .columnas {
-        flex-direction: column;
-    }
+            <tbody>
 
-    table {
-        font-size: 14px;
-    }
+                <tr>
 
-    th,
-    td {
-        padding: 8px;
-    }
-}
+                    <td>Número de capas</td>
+
+                    <td>4</td>
+
+                    <td>7</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Tipo</td>
+
+                    <td>Modelo práctico basado en protocolos</td>
+
+                    <td>Modelo de referencia</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Uso principal</td>
+
+                    <td>Internet y redes actuales</td>
+
+                    <td>Estudio y comprensión de redes</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Transporte</td>
+
+                    <td>TCP y UDP</td>
+
+                    <td>Capa de transporte</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Capas superiores</td>
+
+                    <td>Aplicación</td>
+
+                    <td>Sesión, presentación y aplicación</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- =========================
+         VENTAJAS Y DESVENTAJAS
+    ========================== -->
+
+    <section>
+
+        <h2>
+            Ventajas y desventajas
+        </h2>
+
+        <div class="columnas">
+
+            <div class="tarjeta">
+
+                <h3>
+                    TCP/IP
+                </h3>
+
+                <h4>
+                    Ventajas
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Es utilizado ampliamente en Internet.
+                    </li>
+
+                    <li>
+                        Permite la comunicación entre diferentes redes.
+                    </li>
+
+                    <li>
+                        Utiliza protocolos ampliamente implementados.
+                    </li>
+
+                    <li>
+                        Es práctico para el funcionamiento de las redes.
+                    </li>
+
+                </ul>
+
+                <h4>
+                    Desventajas
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Su estructura es menos detallada que OSI.
+                    </li>
+
+                    <li>
+                        Algunas funciones se agrupan dentro de una misma capa.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <h3>
+                    OSI
+                </h3>
+
+                <h4>
+                    Ventajas
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Divide la comunicación en siete capas.
+                    </li>
+
+                    <li>
+                        Facilita el aprendizaje de las redes.
+                    </li>
+
+                    <li>
+                        Ayuda a identificar problemas en diferentes niveles.
+                    </li>
+
+                </ul>
+
+                <h4>
+                    Desventajas
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Es más teórico que TCP/IP.
+                    </li>
+
+                    <li>
+                        Puede resultar más complejo de estudiar.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EJEMPLO PRÁCTICO
+    ========================== -->
+
+    <section>
+
+        <h2>
+            Ejemplo práctico
+        </h2>
+
+        <p>
+            Un ejemplo sencillo ocurre cuando un usuario entra a una
+            página web. La aplicación utiliza protocolos como HTTP o
+            HTTPS para solicitar información. Los datos son transportados
+            mediante protocolos como TCP y posteriormente IP participa
+            en el direccionamiento de los paquetes.
+        </p>
+
+        <p>
+            En este proceso participan diferentes funciones de red.
+            TCP/IP permite organizar estas funciones de manera práctica,
+            mientras que OSI permite observarlas con mayor detalle
+            mediante sus siete capas.
+        </p>
+
+        <img src="img/persona.png"
+             alt="Persona trabajando con redes TCP/IP y OSI">
+
+        <p class="pie-imagen">
+            Ejemplo de una persona trabajando con tecnologías relacionadas
+            con las redes informáticas.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         APLICACIÓN EN EQUIPO
+    ========================== -->
+
+    <section>
+
+        <h2>
+            Aplicación de los modelos en redes
+        </h2>
+
+        <p>
+            El conocimiento de TCP/IP y OSI es importante para estudiantes
+            y profesionales del área de sistemas y redes. Estos modelos
+            permiten analizar la comunicación entre dispositivos, comprender
+            los protocolos utilizados y localizar posibles problemas en
+            diferentes partes de una conexión.
+        </p>
+
+        <p>
+            En proyectos de redes también es posible trabajar de manera
+            colaborativa para configurar dispositivos, analizar conexiones
+            y comprender cómo viajan los datos desde un equipo hacia otro.
+        </p>
+
+        <img src="img/equipo.png"
+             alt="Personas trabajando en un proyecto de redes">
+
+        <p class="pie-imagen">
+            Trabajo colaborativo relacionado con la implementación y
+            análisis de redes informáticas.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         CONCLUSIONES
+    ========================== -->
+
+    <section>
+
+        <h2>
+            Conclusiones
+        </h2>
+
+        <p>
+            El modelo TCP/IP y el modelo OSI son fundamentales para
+            comprender el funcionamiento de las redes informáticas.
+            Aunque tienen estructuras diferentes, ambos permiten
+            organizar las funciones necesarias para que los dispositivos
+            puedan comunicarse.
+        </p>
+
+        <p>
+            TCP/IP tiene una gran importancia debido a su utilización
+            en Internet y en numerosas redes actuales. Por otra parte,
+            OSI es especialmente útil como modelo de referencia para
+            estudiar y analizar la comunicación entre dispositivos.
+        </p>
+
+        <p>
+            Comprender las diferencias entre ambos modelos permite
+            analizar mejor las redes, comprender los protocolos y
+            facilitar la solución de problemas de comunicación.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Derechos reservados © 2026
+        </p>
+
+        <p>
+            Emanuel Barrios Villarreal
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
