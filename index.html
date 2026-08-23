@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modelo TCP/IP y comparación con OSI</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="encabezado">
+            <div>
+                <h1>Modelo TCP/IP y comparación con OSI</h1>
+                <p>Estudiante: Emanuel Barrios Villarreal</p>
+            </div>
+
+            <div class="icono">
+                🌐
+            </div>
+        </div>
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+    <section class="presentacion">
+        <h2>Modelos de comunicación en redes</h2>
+
+        <p>
+            Los modelos TCP/IP y OSI permiten comprender cómo se comunican
+            los dispositivos dentro de una red informática.
+        </p>
+
+        <img src="img/tcpip.jpg" alt="Representación de redes TCP/IP">
+
+        <p class="pie-imagen">
+            Representación de la comunicación entre dispositivos mediante redes.
+        </p>
+    </section>
+
+
+    <!-- INTRODUCCIÓN -->
+    <section>
+        <h2>Introducción</h2>
+
+        <p>
+            Las redes informáticas permiten que diferentes dispositivos puedan
+            comunicarse y compartir información. Para entender cómo ocurre esta
+            comunicación existen diferentes modelos que organizan los procesos
+            necesarios para enviar y recibir datos.
+        </p>
+
+        <p>
+            Dos de los modelos más importantes son el modelo OSI y el modelo
+            TCP/IP. El modelo OSI utiliza siete capas para explicar de manera
+            detallada las funciones que intervienen en una comunicación de red.
+            Por otro lado, TCP/IP utiliza una estructura más práctica que se
+            relaciona directamente con los protocolos utilizados en Internet.
+        </p>
+
+        <p>
+            Conocer estos modelos es importante porque ayuda a comprender el
+            funcionamiento de las redes, identificar problemas de comunicación
+            y entender la función de diferentes protocolos y dispositivos.
+        </p>
+    </section>
+
+
+    <!-- MODELO TCP/IP -->
+    <section>
+        <h2>Modelo TCP/IP</h2>
+
+        <p>
+            El modelo TCP/IP es un conjunto de protocolos utilizado para permitir
+            la comunicación entre dispositivos conectados a una red. Es
+            fundamental para el funcionamiento de Internet y organiza las
+            funciones de comunicación en diferentes capas.
+        </p>
+
+        <h3>Capas del modelo TCP/IP</h3>
+
+        <ul>
+            <li>
+                <strong>Capa de acceso a la red:</strong>
+                permite la comunicación entre los dispositivos y el medio físico
+                de transmisión.
+            </li>
+
+            <li>
+                <strong>Capa de Internet:</strong>
+                se encarga del direccionamiento y del envío de paquetes entre
+                diferentes redes. Uno de sus principales protocolos es IP.
+            </li>
+
+            <li>
+                <strong>Capa de transporte:</strong>
+                permite la comunicación entre aplicaciones y controla el envío
+                de información. Entre sus protocolos principales se encuentran
+                TCP y UDP.
+            </li>
+
+            <li>
+                <strong>Capa de aplicación:</strong>
+                proporciona servicios de red utilizados directamente por las
+                aplicaciones, como HTTP, DNS, FTP y SMTP.
+            </li>
+        </ul>
+
+        <img src="img/tcpip.jpg" alt="Capas del modelo TCP/IP">
+
+        <p class="pie-imagen">
+            Capas principales del modelo TCP/IP.
+        </p>
+    </section>
+
+
+    <!-- MODELO OSI -->
+    <section>
+        <h2>Modelo OSI</h2>
+
+        <p>
+            El modelo OSI es un modelo de referencia que divide la comunicación
+            de una red en siete capas. Su objetivo principal es organizar y
+            explicar las diferentes funciones que participan en la transmisión
+            de información.
+        </p>
+
+        <ol>
+            <li><strong>Física:</strong> transmisión de bits mediante el medio físico.</li>
+            <li><strong>Enlace de datos:</strong> comunicación entre dispositivos conectados directamente.</li>
+            <li><strong>Red:</strong> direccionamiento y selección de rutas.</li>
+            <li><strong>Transporte:</strong> comunicación de extremo a extremo.</li>
+            <li><strong>Sesión:</strong> administración de las sesiones de comunicación.</li>
+            <li><strong>Presentación:</strong> representación y transformación de los datos.</li>
+            <li><strong>Aplicación:</strong> servicios de red utilizados por las aplicaciones.</li>
+        </ol>
+
+        <img src="img/osi.jpg" alt="Capas del modelo OSI">
+
+        <p class="pie-imagen">
+            Representación de las siete capas del modelo OSI.
+        </p>
+    </section>
+
+
+    <!-- COMPARACIÓN -->
+    <section>
+        <h2>Comparación entre TCP/IP y OSI</h2>
+
+        <p>
+            Aunque los dos modelos tienen como objetivo explicar la comunicación
+            en redes, presentan diferencias importantes en la cantidad de capas,
+            su estructura y su utilización.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>TCP/IP</th>
+                    <th>OSI</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Número de capas</td>
+                    <td>4</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <td>Tipo</td>
+                    <td>Modelo práctico basado en protocolos</td>
+                    <td>Modelo de referencia</td>
+                </tr>
+
+                <tr>
+                    <td>Uso principal</td>
+                    <td>Internet y redes actuales</td>
+                    <td>Estudio y comprensión de redes</td>
+                </tr>
+
+                <tr>
+                    <td>Transporte</td>
+                    <td>TCP y UDP</td>
+                    <td>Capa de transporte</td>
+                </tr>
+
+                <tr>
+                    <td>Aplicación</td>
+                    <td>Incluye varias funciones superiores</td>
+                    <td>Se divide en aplicación, presentación y sesión</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <img src="img/comparacion.jpg" alt="Comparación entre TCP/IP y OSI">
+
+        <p class="pie-imagen">
+            Comparación visual entre los modelos TCP/IP y OSI.
+        </p>
+    </section>
+
+
+    <!-- VENTAJAS Y DESVENTAJAS -->
+    <section>
+        <h2>Ventajas y desventajas</h2>
+
+        <div class="columnas">
+
+            <div class="tarjeta">
+                <h3>TCP/IP</h3>
+
+                <h4>Ventajas</h4>
+
+                <ul>
+                    <li>Es utilizado ampliamente en Internet.</li>
+                    <li>Permite la comunicación entre diferentes redes.</li>
+                    <li>Utiliza protocolos ampliamente implementados.</li>
+                    <li>Es práctico para el funcionamiento de las redes.</li>
+                </ul>
+
+                <h4>Desventajas</h4>
+
+                <ul>
+                    <li>Su estructura es menos detallada que OSI.</li>
+                    <li>Algunas funciones se agrupan dentro de una misma capa.</li>
+                </ul>
+            </div>
+
+
+            <div class="tarjeta">
+                <h3>OSI</h3>
+
+                <h4>Ventajas</h4>
+
+                <ul>
+                    <li>Divide la comunicación en siete capas.</li>
+                    <li>Facilita el aprendizaje de las redes.</li>
+                    <li>Ayuda a identificar problemas en diferentes niveles.</li>
+                </ul>
+
+                <h4>Desventajas</h4>
+
+                <ul>
+                    <li>Es más teórico que TCP/IP.</li>
+                    <li>Algunas funciones pueden resultar más complejas de estudiar.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- EJEMPLO -->
+    <section>
+        <h2>Ejemplo práctico</h2>
+
+        <p>
+            Un ejemplo sencillo es cuando un usuario entra a una página web.
+            La aplicación utiliza un protocolo como HTTP o HTTPS para solicitar
+            información. Los datos son transportados mediante protocolos como
+            TCP y posteriormente IP se encarga del direccionamiento de los
+            paquetes.
+        </p>
+
+        <p>
+            En este proceso participan diferentes funciones de red. El modelo
+            TCP/IP permite organizar estas funciones de manera práctica,
+            mientras que el modelo OSI permite observarlas con mayor detalle
+            mediante sus siete capas.
+        </p>
+    </section>
+
+
+    <!-- CONCLUSIONES -->
+    <section>
+        <h2>Conclusiones</h2>
+
+        <p>
+            El modelo TCP/IP y el modelo OSI son fundamentales para comprender
+            el funcionamiento de las redes informáticas. Aunque tienen
+            estructuras diferentes, ambos permiten organizar las funciones
+            necesarias para que los dispositivos puedan comunicarse.
+        </p>
+
+        <p>
+            TCP/IP tiene una gran importancia debido a su utilización en Internet
+            y en numerosas redes actuales. Por otra parte, OSI es especialmente
+            útil como modelo de referencia para estudiar y analizar la
+            comunicación entre dispositivos.
+        </p>
+
+        <p>
+            Comprender las diferencias entre ambos modelos permite a los
+            estudiantes y profesionales de sistemas analizar mejor las redes,
+            comprender los protocolos y solucionar problemas de comunicación.
+        </p>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Derechos reservados © 2026
+        </p>
+
+        <p>
+            Emanuel Barrios Villarreal
+        </p>
+    </footer>
+
+</body>
+</html>
